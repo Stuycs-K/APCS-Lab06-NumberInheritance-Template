@@ -15,8 +15,8 @@ public class RealNumber{
   
   /**
   *@return 0 when other is the same as this,
-    a positive value when this is larger than other, 
-    or a negative value when this is larger than other
+    a positive value when this is greater than other, 
+    or a negative value when this is less than other
   */
   public int compareTo(RealNumber other){
     //complete this method
