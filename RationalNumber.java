@@ -27,8 +27,8 @@ public class RationalNumber extends RealNumber
 
 
   //NOTE! For two reasons, the @Override annotation is useful.
-  //If the annotated method does not actually override anything, the compiler issues a warning.
-  //It can help to make the source code more readable.
+  //1. If the annotated method does not actually override anything, the compiler issues a warning.
+  //2. It can help to make the source code more readable.
   
   @Override
   public double getValue(){
