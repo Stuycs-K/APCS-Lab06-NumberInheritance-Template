@@ -14,6 +14,16 @@ public class RealNumber{
   }
   
   /**
+  *@return 0 when other is the same as this,
+    a positive value when this is larger than other, 
+    or a negative value when this is larger than other
+  */
+  public int compareTo(RealNumber other){
+    //complete this method
+    return 0;
+  }
+  
+  /**
   *@return the sum of this and the other
   *@param other - ANY RealNumber, including a RationalNumber or other subclasses of RealNumber (that aren't written yet)
   */
