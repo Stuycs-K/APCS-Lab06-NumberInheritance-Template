@@ -42,7 +42,7 @@ public class RealNumber{
   }
 
   /**
-  *@return the this divided by the other
+  *@return the this divided by the other, use the / operator and don't worry about errors.
   */
   public double divide(RealNumber other){
     //COMPLETE THIS METHOD
