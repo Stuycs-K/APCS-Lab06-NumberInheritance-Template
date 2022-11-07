@@ -3,7 +3,8 @@ public class RationalNumber extends RealNumber
   private int numerator, denominator;
 
   /**Initialize the RationalNumber with the provided values
-  *  if the denominator is 0, make the fraction 0/1 instead
+  *  if the denominator is 0, make the fraction 0/1 instead.
+  *  All RationalNumbers must reduce() upon construction.
   *@param nume the numerator
   *@param deno the denominator
   */
@@ -24,6 +25,12 @@ public class RationalNumber extends RealNumber
     return denominator;
   }
 
+
+  //NOTE! For two reasons, the @Override annotation is useful.
+  //If the annotated method does not actually override anything, the compiler issues a warning.
+  //It can help to make the source code more readable.
+  
+  @Override
   public double getValue(){
     //COMPLETE THIS METHOD
     return 0.0;
@@ -50,6 +57,7 @@ public class RationalNumber extends RealNumber
   /**
   *@return the value expressed as "3/4" or "8/3", however 4/1 should be "4"
   */
+  @Override
   public String toString(){
     //COMPLETE THIS METHOD
     return "0";
@@ -70,13 +78,14 @@ public class RationalNumber extends RealNumber
   /**
   *Divide the numerator and denominator by the GCD
   *This must be used to maintain that all RationalNumbers are
-  *reduced after construction.
+  *reduced upon construction.
   */
   public void reduce(){
 
   }
   
-  /******************Operations Return a new RationalNumber!!!!****************/
+  /******************new math operations Return a new RationalNumber!!!!****************/
+  //Note: RealNumber methods are inherited, these are NOT override, they are different methods.
   
   /**
   *@return a new RationalNumber that is the product of this and the other
