@@ -1,1 +1,1 @@
-# APCS-Lab06-NumberInheritance-Template
+# APCS NumberInheritance Lab
