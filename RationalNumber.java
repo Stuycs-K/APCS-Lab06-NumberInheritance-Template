@@ -3,7 +3,9 @@ public class RationalNumber extends RealNumber
   private int numerator, denominator;
 
   /**Initialize the RationalNumber with the provided values
-  *  if the denominator is 0, make the fraction 0/1 instead.
+  *  When the denominator is 0, make the fraction 0/1 instead. This is
+  *  not mathematically correct, but we can decide on the behavior to 
+  *  avoid issues.
   *  All RationalNumbers must reduce() upon construction.
   *@param nume the numerator
   *@param deno the denominator
@@ -47,6 +49,7 @@ public class RationalNumber extends RealNumber
   
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
+  *note, this is NOT an override. If you use equals on a RealNumber that is the other method.
   */
   public boolean equals(RationalNumber other){
     //COMPLETE THIS METHOD
